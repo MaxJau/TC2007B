@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="ApplicacionMultmedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Jauregui Chavez" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dn0-yF-FZj">
+                                <rect key="frame" x="101" y="331" width="188" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A01570673" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a63-UO-QbI">
+                                <rect key="frame" x="143" y="363" width="104" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="atA-nL-ZfH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e57-Wq-kAk">
+                                <rect key="frame" x="137" y="404" width="117" height="36"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Ir a Imagen"/>
+                                <connections>
+                                    <action selector="navegarAImagen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eu2-iR-uwT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e57-Wq-kAk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="3eQ-mA-VLw"/>
+                            <constraint firstItem="e57-Wq-kAk" firstAttribute="centerX" secondItem="a63-UO-QbI" secondAttribute="centerX" id="CwN-GX-sKh"/>
+                            <constraint firstItem="Dn0-yF-FZj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="284" id="Iel-r8-lgU"/>
+                            <constraint firstItem="a63-UO-QbI" firstAttribute="top" secondItem="Dn0-yF-FZj" secondAttribute="bottom" constant="8" id="W78-8a-Q7x"/>
+                            <constraint firstItem="Dn0-yF-FZj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aaZ-K8-B6u"/>
+                            <constraint firstItem="Dn0-yF-FZj" firstAttribute="centerX" secondItem="a63-UO-QbI" secondAttribute="centerX" id="kxT-vh-VbR"/>
+                            <constraint firstItem="e57-Wq-kAk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m2R-c1-1U5"/>
+                            <constraint firstItem="e57-Wq-kAk" firstAttribute="top" secondItem="a63-UO-QbI" secondAttribute="bottom" constant="19" id="wxT-xi-Jmz"/>
+                            <constraint firstItem="a63-UO-QbI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="znc-ki-C8Q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41.53846153846154" y="-28.436018957345969"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="bP6-KJ-2Gh">
+            <objects>
+                <viewController storyboardIdentifier="imagenViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d4P-xt-fl0" customClass="ImageViewController" customModule="ApplicacionMultmedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nLB-AR-z1E">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Imagen" translatesAutoresizingMaskIntoConstraints="NO" id="Z6Z-to-DKr">
+                                <rect key="frame" x="16" y="73" width="358" height="636"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3K0-rB-gqD">
+                                <rect key="frame" x="147" y="734" width="96" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Ir a Video"/>
+                                <connections>
+                                    <action selector="mostrarVideo:" destination="d4P-xt-fl0" eventType="touchUpInside" id="pXC-jF-HcD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="69F-HT-cS8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="69F-HT-cS8" firstAttribute="bottom" secondItem="3K0-rB-gqD" secondAttribute="bottom" constant="41" id="5br-up-49N"/>
+                            <constraint firstItem="3K0-rB-gqD" firstAttribute="centerX" secondItem="nLB-AR-z1E" secondAttribute="centerX" id="FtN-vo-oyb"/>
+                            <constraint firstItem="3K0-rB-gqD" firstAttribute="centerX" secondItem="Z6Z-to-DKr" secondAttribute="centerX" id="efW-Qp-Jve"/>
+                            <constraint firstItem="3K0-rB-gqD" firstAttribute="top" secondItem="Z6Z-to-DKr" secondAttribute="bottom" constant="25" id="tBt-Pj-lzu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zI0-AM-WQ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850.76923076923072" y="-28.436018957345969"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="LFt-lu-ewJ">
+            <objects>
+                <viewController storyboardIdentifier="videoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Dif-r6-eic" customClass="VideoViewController" customModule="ApplicacionMultmedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Tk-1y-kF6">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uf-Z0-KMB">
+                                <rect key="frame" x="129" y="301" width="132" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Mostrar Video"/>
+                                <connections>
+                                    <action selector="mostrarVideo:" destination="Dif-r6-eic" eventType="touchUpInside" id="Ng3-EU-pqb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnK-QW-O09">
+                                <rect key="frame" x="85" y="480" width="218" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Regresar a vista principal"/>
+                                <connections>
+                                    <action selector="regresoMain:" destination="Dif-r6-eic" eventType="touchUpInside" id="FSO-uo-Yqs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vbw-YU-HLK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xUP-Xd-HJ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684.6153846153845" y="-28.436018957345969"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Imagen" width="1200" height="675"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
